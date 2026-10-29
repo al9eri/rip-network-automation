@@ -1,0 +1,3 @@
+! Ends T5: LAB-R3 sends updates to LIB-R1 again.
+router rip
+ no passive-interface GigabitEthernet0/1

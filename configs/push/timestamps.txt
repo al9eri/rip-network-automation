@@ -1,0 +1,10 @@
+! Push to all three routers before testing.
+! Puts a date and millisecond time on every debug and log line, so
+! parse_rip_debug.py can measure the time between a link going down
+! and the moment the new route is installed.
+service timestamps debug datetime msec
+service timestamps log datetime msec
+! Keep a copy of debug output in the router's memory (64 KB). In T2 the SSH
+! session to LIB-R1 drops with the link, so read the capture back afterwards
+! with 'show logging' instead of losing it ('clear logging' before each run).
+logging buffered 64000 debugging

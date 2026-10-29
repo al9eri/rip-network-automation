@@ -1,0 +1,11 @@
+time,kind,interface,peer,update,network,metric,detail
+2026-10-29T06:35:59.918,received,GigabitEthernet0/1,10.0.13.2,,192.168.20.0/24,2,
+2026-10-29T06:36:07.269,link,Serial0/0/0,,,,,administratively down
+2026-10-29T06:36:07.278,route_delete,,10.0.12.2,,192.168.20.0,,
+2026-10-29T06:36:07.281,sent,GigabitEthernet0/1,224.0.0.9,flash,192.168.20.0/24,16,
+2026-10-29T06:36:08.269,link,Serial0/0/0,,,,,down
+2026-10-29T06:36:18.949,received,GigabitEthernet0/1,10.0.13.2,,192.168.20.0/24,2,
+2026-10-29T06:36:18.954,route_add,,10.0.13.2,,192.168.20.0/24,2,
+2026-10-29T06:36:28.784,received,GigabitEthernet0/1,10.0.13.2,,192.168.20.0/24,2,
+2026-10-29T06:36:58.430,received,GigabitEthernet0/1,10.0.13.2,,192.168.20.0/24,2,
+2026-10-29T06:37:29.599,received,GigabitEthernet0/1,10.0.13.2,,192.168.20.0/24,2,

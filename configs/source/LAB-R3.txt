@@ -1,0 +1,74 @@
+! ============================================================
+! LAB-R3 - Laboratory router (Cisco 2901 + HWIC-2T module)
+! CCEN 356 Project 1 - RIPv2 school network
+! Paste into the CLI starting from Router> or Router#
+!
+! NOTE: this is a paste-in script (what gets typed into a blank device),
+! not an export from the built network. The brief's ".txt exports from
+! routers" are the 'show running-config' output, saved after the build
+! in configs/exports/. Lines starting with '!' are comments, so the whole
+! file can still be pasted into the CLI.
+! ============================================================
+enable
+configure terminal
+!
+hostname LAB-R3
+no ip domain-lookup
+service password-encryption
+enable secret class123
+banner motd # LAB-R3 - Laboratory router. Authorized access only. #
+!
+! ---------- Interfaces ----------
+interface GigabitEthernet0/0
+ description LAN - Lab switch SW-LAB Gi0/1
+ ip address 192.168.30.1 255.255.255.0
+ no shutdown
+ exit
+!
+interface GigabitEthernet0/1
+ description WAN Ethernet - to LIB-R1 G0/1
+ ip address 10.0.13.2 255.255.255.252
+ no shutdown
+ exit
+!
+interface Serial0/0/0
+ description WAN Serial - to TCH-R2 S0/0/1 (this end is DTE)
+ ip address 10.0.23.2 255.255.255.252
+ no shutdown
+ exit
+!
+! ---------- DHCP for Lab PCs (automation PC .20 is static) ----------
+ip dhcp excluded-address 192.168.30.1 192.168.30.20
+ip dhcp pool LAB-LAN
+ network 192.168.30.0 255.255.255.0
+ default-router 192.168.30.1
+ exit
+!
+! ---------- RIP version 2 ----------
+router rip
+ version 2
+ no auto-summary
+ network 10.0.0.0
+ network 192.168.30.0
+ passive-interface GigabitEthernet0/0
+ exit
+!
+! ---------- SSH for Python automation (netmiko) ----------
+ip domain-name school.local
+username admin privilege 15 secret Admin@123
+! If the router asks "How many bits in the modulus", type 1024
+crypto key generate rsa general-keys modulus 1024
+ip ssh version 2
+!
+line console 0
+ password cisco
+ login
+ logging synchronous
+ exit
+line vty 0 4
+ login local
+ transport input ssh
+ exit
+!
+end
+write memory

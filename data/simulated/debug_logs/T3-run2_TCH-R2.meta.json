@@ -1,0 +1,8 @@
+{
+  "simulated": true,
+  "source": "simulated",
+  "router": "TCH-R2",
+  "label": "T3-run2",
+  "duration_s": 95,
+  "note": "SIMULATED SAMPLE DATA \u2014 NOT FROM PHYSICAL ROUTERS"
+}

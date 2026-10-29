@@ -1,0 +1,56 @@
+! ============================================================
+! SW-LIB - Library switch (Cisco 2960)
+! CCEN 356 Project 1 - RIPv2 school network
+! Ports: Gi0/1 uplink to LIB-R1 | Fa0/1 PC-LIB-1 | Fa0/2 PC-LIB-2
+!        Fa0/3 Laptop-LIB-1 | Fa0/4 Printer-LIB
+!
+! NOTE: this is a paste-in script (what gets typed into a blank device),
+! not an export from the built network. The brief's ".txt exports from
+! routers" are the 'show running-config' output, saved after the build
+! in configs/exports/. Lines starting with '!' are comments, so the whole
+! file can still be pasted into the CLI.
+! ============================================================
+enable
+configure terminal
+!
+hostname SW-LIB
+no ip domain-lookup
+service password-encryption
+enable secret class123
+banner motd # SW-LIB - Library switch. Authorized access only. #
+!
+interface GigabitEthernet0/1
+ description Uplink to LIB-R1 G0/0
+ exit
+interface range FastEthernet0/1 - 4
+ description Library end devices
+ switchport mode access
+ spanning-tree portfast
+ exit
+!
+! ---------- Management IP ----------
+interface Vlan1
+ ip address 192.168.10.2 255.255.255.0
+ no shutdown
+ exit
+ip default-gateway 192.168.10.1
+!
+! ---------- SSH ----------
+ip domain-name school.local
+username admin privilege 15 secret Admin@123
+! If the switch asks "How many bits in the modulus", type 1024
+crypto key generate rsa general-keys modulus 1024
+ip ssh version 2
+!
+line console 0
+ password cisco
+ login
+ logging synchronous
+ exit
+line vty 0 15
+ login local
+ transport input ssh
+ exit
+!
+end
+write memory

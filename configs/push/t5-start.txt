@@ -1,0 +1,6 @@
+! T5 silent failure, push to LAB-R3 with --no-save.
+! LAB-R3 stops sending RIP updates to LIB-R1 but the link stays up,
+! so LIB-R1 only notices when its timers run out (180 s invalid,
+! 240 s flush).
+router rip
+ passive-interface GigabitEthernet0/1

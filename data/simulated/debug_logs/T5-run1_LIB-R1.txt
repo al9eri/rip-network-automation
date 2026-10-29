@@ -1,0 +1,38 @@
+! =========================================================================
+! SIMULATED SAMPLE CAPTURE — GENERATED OFFLINE BY scripts/simulate_data.py
+! NOT RECORDED FROM PHYSICAL CISCO ROUTERS. DO NOT SUBMIT AS LAB EVIDENCE.
+! =========================================================================
+*Oct 29 08:36:05.413: RIP: received v2 update from 10.0.13.2 on GigabitEthernet0/1
+*Oct 29 08:36:05.413:      192.168.30.0/24 via 0.0.0.0 in 1 hops
+*Oct 29 08:36:23.963: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:36:23.963:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 08:36:35.413: RIP: received v2 update from 10.0.13.2 on GigabitEthernet0/1
+*Oct 29 08:36:35.413:      192.168.30.0/24 via 0.0.0.0 in 1 hops
+*Oct 29 08:36:52.517: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:36:52.517:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 08:37:22.667: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:37:22.667:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 08:37:51.883: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:37:51.883:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 08:38:23.028: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:38:23.028:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 08:38:54.089: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:38:54.089:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 08:39:23.494: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:39:23.494:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 08:39:35.413: RIP: sending v2 flash update to 224.0.0.9 via Serial0/0/0 (10.0.12.1)
+*Oct 29 08:39:35.413: 	192.168.30.0/24 via 0.0.0.0, metric 16, tag 0
+*Oct 29 08:39:53.789: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:39:53.789:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 08:40:23.774: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:40:23.774:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 08:40:35.413: RT: delete route to 192.168.30.0 via 10.0.13.2, rip metric [120/1]
+*Oct 29 08:40:47.813: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:40:47.813:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 08:40:47.818: RT: add 192.168.30.0/24 via 10.0.12.2, rip metric [120/2]
+*Oct 29 08:40:53.118: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:40:53.118:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 08:41:22.918: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:41:22.918:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 08:41:52.602: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:41:52.602:      192.168.30.0/24 via 0.0.0.0 in 2 hops

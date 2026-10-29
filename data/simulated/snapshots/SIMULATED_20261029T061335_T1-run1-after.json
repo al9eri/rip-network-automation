@@ -1,0 +1,70 @@
+{
+  "simulated": true,
+  "note": "SIMULATED SAMPLE SNAPSHOT \u2014 NOT FROM PHYSICAL ROUTERS",
+  "time": "2026-10-29T06:13:35",
+  "label": "T1-run1-after",
+  "routers": {
+    "LIB-R1": [
+      {
+        "network": "10.0.23.0/30",
+        "metric": 1,
+        "next_hop": "10.0.13.2",
+        "interface": "GigabitEthernet0/1",
+        "status": "up"
+      },
+      {
+        "network": "192.168.30.0/24",
+        "metric": 1,
+        "next_hop": "10.0.13.2",
+        "interface": "GigabitEthernet0/1",
+        "status": "up"
+      },
+      {
+        "network": "192.168.20.0/24",
+        "metric": 2,
+        "next_hop": "10.0.13.2",
+        "interface": "GigabitEthernet0/1",
+        "status": "up"
+      }
+    ],
+    "TCH-R2": [
+      {
+        "network": "10.0.13.0/30",
+        "metric": 1,
+        "next_hop": "10.0.23.2",
+        "interface": "Serial0/0/1",
+        "status": "up"
+      },
+      {
+        "network": "192.168.30.0/24",
+        "metric": 1,
+        "next_hop": "10.0.23.2",
+        "interface": "Serial0/0/1",
+        "status": "up"
+      },
+      {
+        "network": "192.168.10.0/24",
+        "metric": 2,
+        "next_hop": "10.0.23.2",
+        "interface": "Serial0/0/1",
+        "status": "up"
+      }
+    ],
+    "LAB-R3": [
+      {
+        "network": "192.168.10.0/24",
+        "metric": 1,
+        "next_hop": "10.0.13.1",
+        "interface": "GigabitEthernet0/1",
+        "status": "up"
+      },
+      {
+        "network": "192.168.20.0/24",
+        "metric": 1,
+        "next_hop": "10.0.23.1",
+        "interface": "Serial0/0/0",
+        "status": "up"
+      }
+    ]
+  }
+}

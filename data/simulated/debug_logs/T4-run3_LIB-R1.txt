@@ -1,0 +1,19 @@
+! =========================================================================
+! SIMULATED SAMPLE CAPTURE — GENERATED OFFLINE BY scripts/simulate_data.py
+! NOT RECORDED FROM PHYSICAL CISCO ROUTERS. DO NOT SUBMIT AS LAB EVIDENCE.
+! =========================================================================
+*Oct 29 08:24:07.269: %LINK-3-UPDOWN: Interface Serial0/0/0, changed state to up
+*Oct 29 08:24:08.269: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/0, changed state to up
+*Oct 29 08:24:15.419: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:24:15.419:      192.168.20.0/24 via 0.0.0.0 in 1 hops
+*Oct 29 08:24:15.424: RT: add 192.168.20.0/24 via 10.0.12.2, rip metric [120/1]
+*Oct 29 08:24:18.811: RIP: received v2 update from 10.0.13.2 on GigabitEthernet0/1
+*Oct 29 08:24:18.811:      192.168.20.0/24 via 0.0.0.0 in 1 hops
+*Oct 29 08:24:42.564: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:24:42.564:      192.168.20.0/24 via 0.0.0.0 in 1 hops
+*Oct 29 08:24:47.973: RIP: received v2 update from 10.0.13.2 on GigabitEthernet0/1
+*Oct 29 08:24:47.973:      192.168.20.0/24 via 0.0.0.0 in 1 hops
+*Oct 29 08:25:13.162: RIP: received v2 update from 10.0.12.2 on Serial0/0/0
+*Oct 29 08:25:13.162:      192.168.20.0/24 via 0.0.0.0 in 1 hops
+*Oct 29 08:25:17.838: RIP: received v2 update from 10.0.13.2 on GigabitEthernet0/1
+*Oct 29 08:25:17.838:      192.168.20.0/24 via 0.0.0.0 in 1 hops

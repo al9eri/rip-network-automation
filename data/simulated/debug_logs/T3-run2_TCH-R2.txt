@@ -1,0 +1,20 @@
+! =========================================================================
+! SIMULATED SAMPLE CAPTURE — GENERATED OFFLINE BY scripts/simulate_data.py
+! NOT RECORDED FROM PHYSICAL CISCO ROUTERS. DO NOT SUBMIT AS LAB EVIDENCE.
+! =========================================================================
+*Oct 29 07:36:02.819: RIP: received v2 update from 10.0.23.2 on Serial0/0/1
+*Oct 29 07:36:02.819:      192.168.30.0/24 via 0.0.0.0 in 1 hops
+*Oct 29 07:36:07.269: %LINK-5-CHANGED: Interface Serial0/0/1, changed state to administratively down
+*Oct 29 07:36:07.278: RT: delete route to 192.168.30.0 via 10.0.23.2, rip metric [120/1]
+*Oct 29 07:36:07.281: RIP: sending v2 flash update to 224.0.0.9 via Serial0/0/0
+*Oct 29 07:36:07.281: 	192.168.30.0/24 via 0.0.0.0, metric 16, tag 0
+*Oct 29 07:36:08.269: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+*Oct 29 07:36:23.337: RIP: received v2 update from 10.0.12.1 on Serial0/0/0
+*Oct 29 07:36:23.337:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 07:36:28.369: RIP: received v2 update from 10.0.12.1 on Serial0/0/0
+*Oct 29 07:36:28.369:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 07:36:28.374: RT: add 192.168.30.0/24 via 10.0.12.1, rip metric [120/2]
+*Oct 29 07:36:52.667: RIP: received v2 update from 10.0.12.1 on Serial0/0/0
+*Oct 29 07:36:52.667:      192.168.30.0/24 via 0.0.0.0 in 2 hops
+*Oct 29 07:37:21.754: RIP: received v2 update from 10.0.12.1 on Serial0/0/0
+*Oct 29 07:37:21.754:      192.168.30.0/24 via 0.0.0.0 in 2 hops

@@ -1,0 +1,8 @@
+{
+  "simulated": true,
+  "source": "simulated",
+  "router": "LIB-R1",
+  "label": "T2-run3",
+  "duration_s": 95,
+  "note": "SIMULATED SAMPLE DATA \u2014 NOT FROM PHYSICAL ROUTERS"
+}
