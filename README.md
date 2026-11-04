@@ -1,6 +1,7 @@
 # RIPv2 Dynamic Routing & Python Network Automation
 
 [![CI](https://github.com/al9eri/rip-network-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/al9eri/rip-network-automation/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Cisco IOS](https://img.shields.io/badge/Platform-Cisco_2901_IOS-F59E0B?style=flat-square&labelColor=0B0F17)
 ![Protocol](https://img.shields.io/badge/Routing-RIPv2_%2F_SSH-00F0FF?style=flat-square&labelColor=0B0F17)
 
