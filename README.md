@@ -1,11 +1,11 @@
-# RIPv2 Dynamic Routing & Python Network Automation
+# rip-network-automation
 
 [![CI](https://github.com/al9eri/rip-network-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/al9eri/rip-network-automation/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Cisco IOS](https://img.shields.io/badge/Platform-Cisco_2901_IOS-F59E0B?style=flat-square&labelColor=0B0F17)
-![Protocol](https://img.shields.io/badge/Routing-RIPv2_%2F_SSH-00F0FF?style=flat-square&labelColor=0B0F17)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-A three-room enterprise/campus network (Library, Teachers' room, Laboratory) on Cisco 2901 routers running RIPv2, paired with a Python SSH automation and measurement suite that pushes configurations, snapshots routing tables, monitors route transitions in real time, and measures RIPv2 convergence across physical and silent link failures.
+Python automation scripts (Netmiko) and RIPv2 failover convergence benchmarks across a 3-router Cisco 2901 topology. Developed for **CCEN 356 (Computer Networks)** at Khalifa University.
+
+The suite automates router configuration deployment over SSH, snapshots routing tables at 1 Hz intervals, and measures RIPv2 convergence dynamics (~25.5 s mean failover recovery) across physical and silent link faults.
 
 ## Network Topology
 
