@@ -3,9 +3,9 @@
 [![CI](https://github.com/al9eri/rip-network-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/al9eri/rip-network-automation/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Python automation scripts (Netmiko) and RIPv2 failover convergence benchmarks across a 3-router Cisco 2901 topology. Developed for **CCEN 356 (Computer Networks)** at Khalifa University.
+Python SSH automation (Netmiko) and RIPv2 failover convergence measurement harness across a 3-router Cisco 2901 topology.
 
-The suite automates router configuration deployment over SSH, snapshots routing tables at 1 Hz intervals, and measures RIPv2 convergence dynamics (~25.5 s mean failover recovery) across physical and silent link faults.
+Automates router configuration deployment over SSH, snapshots routing tables at 1 Hz intervals, and measures RIPv2 convergence dynamics (~25.5 s mean failover recovery) across physical and silent link faults.
 
 ## Network Topology
 
